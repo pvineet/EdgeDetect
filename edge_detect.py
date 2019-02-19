@@ -394,14 +394,14 @@ if __name__ == "__main__":
     LoG_params = [((5,5), 0.6),((5,5), 0.7), ((5,5), 0.8), ((5,5), 0.9), ((5,5), 1.0), ((5,5), 1.1)]
     for img in input_images:
         input_file = os.path.join(input_dir, img)
-        #edge_detector.forward(input_file)
-        #edge_detector.backward(input_file)
-        #edge_detector.sobel(input_file)
-        #edge_detector.prewitt(input_file)
+        edge_detector.forward(input_file)
+        edge_detector.backward(input_file)
+        edge_detector.sobel(input_file)
+        edge_detector.prewitt(input_file)
         edge_detector.canny(input_file)
-        #edge_detector.laplacian(input_file)
-        #edge_detector.LoG(input_file)
-        #for params in LoG_params:
-        #    shape, sigma = params
-        #    edge_detector.LoG(input_file, shape=shape, sigma=sigma)
-        #edge_detector.DoG(input_file)
+        edge_detector.laplacian(input_file)
+        edge_detector.LoG(input_file)
+        for params in LoG_params:
+            shape, sigma = params
+            edge_detector.LoG(input_file, shape=shape, sigma=sigma)
+        edge_detector.DoG(input_file)
