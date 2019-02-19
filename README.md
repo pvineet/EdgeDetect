@@ -12,6 +12,10 @@ Edge Detection Algorithms in Python without using functions from OpenCV
 - Difference of Gaussian(DoG)
 
 ## Test images
-The 'input' directory contains test images.
+The 'input' directory contains test images. Examples below:
 
 ![Test image 1](https://github.com/pvineet/EdgeDetect/blob/master/input/test1.jpg)
+![Test image 2](https://github.com/pvineet/EdgeDetect/blob/master/input/test2.jpg)
+![Test image 3](https://github.com/pvineet/EdgeDetect/blob/master/input/test3.jpg)
+
+
