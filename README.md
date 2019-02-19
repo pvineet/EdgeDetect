@@ -13,3 +13,5 @@ Edge Detection Algorithms in Python without using functions from OpenCV
 
 ## Test images
 The 'input' directory contains test images.
+
+![Test image 1](https://github.com/pvineet/EdgeDetect/blob/master/input/test1.jpg)
