@@ -17,7 +17,7 @@ def gauss2D(shape=(3,3),sigma=0.5):
     #h = h/np.sqrt(2*np.pi*sigma*sigma)
     return h
 
-def LoGKernel(shape=(3,3), sigma=0.5):
+def LoGKernel(shape=(5,5), sigma=0.6):
     """
     2D laplacian of gaussian mask
     """
@@ -26,11 +26,10 @@ def LoGKernel(shape=(3,3), sigma=0.5):
     h = np.exp( -(x*x + y*y) / (2.*sigma*sigma))
     m = (x*x + y*y - (2*sigma*sigma))/(sigma**4)
     h *= m
-    print("LoG 1",h)
-    #h = h/np.sqrt(2*np.pi*sigma*sigma)
+    h = h/np.sqrt(2*np.pi*sigma*sigma)
     return h
 
-def DoGKernel(shape=(3,3), sigma1=0.5, sigma2=1.0):
+def DoGKernel(shape=(5,5), sigma1=0.5, sigma2=1.0):
     """
     2D difference of gaussian mask
     """
